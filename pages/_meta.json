@@ -3,12 +3,16 @@
     "title": "About",
     "type": "page"
   },
-  "another": {
-    "title": "Demo component",
-    "display": "hidden"
-  },
   "doc": {
     "title": "Doc",
+    "type": "page"
+  },
+  "project": {
+    "title": "Project",
+    "type": "page"
+  },
+  "resource": {
+    "title": "Resource",
     "type": "page"
   },
   "contact": {
