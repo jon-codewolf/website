@@ -31,7 +31,7 @@ gpg --armor --export 1B73CE78C751A653
 
 **1.4 Add the GPG key to your GitHub account.**
 
-### 2. SSH-key
+### SSH-key
 
 ```sh
 ssh-keygen -t ed25519 -C "alice@example.com" -f ~/.ssh/id_ed25519_alice
@@ -40,12 +40,11 @@ ssh-keygen -t ed25519 -C "bob@example.com" -f ~/.ssh/id_ed25519_bob
 
 ### home-manager
 
-Git program configuration relative to working directory. If under `~/dev/alice`
-Alice's configuration is loaded. If under `~/dev/bob`, Bob's configuration
-is loaded.
+If under `~/dev/alice` Alice's configuration is loaded. If under `~/dev/bob`,
+Bob's configuration is loaded.
 
 ```nix
-{ config }: {
+{
   enable = true;
   lfs = { enable = true; }; # skip downloading large files
   extraConfig = {
